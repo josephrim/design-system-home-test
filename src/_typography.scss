@@ -1,0 +1,15 @@
+$font-family: 'Inter', sans-serif;
+
+@mixin body-m {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 700;
+  font-family: $font-family;
+}
+
+@mixin body-s {
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 700;
+  font-family: $font-family;
+}

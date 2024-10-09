@@ -1,0 +1,32 @@
+@import '../../variables.scss';
+@import '../../typography.scss';
+
+.badge {
+  @include body-s;
+  display: inline-block;
+  padding: $spacing-3xs $spacing-2xs;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.badge-neutral {
+  background-color: #f1f1f7;
+  color: #1b2134;
+}
+
+.badge-positive {
+  background-color: #b1ffc7;
+  color: #1b2134;
+}
+
+.badge-negative {
+  background-color: #ffbfb1;
+  color: #1b2134;
+}
+
+@media (max-width: 768px) {
+  .badge {
+    padding: $spacing-4xs $spacing-3xs;
+    margin: $spacing-3xs;
+  }
+}

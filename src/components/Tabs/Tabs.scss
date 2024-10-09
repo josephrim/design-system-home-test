@@ -1,0 +1,36 @@
+@import '../../variables.scss'; // Import global variables
+
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs-list {
+  display: flex;
+  overflow-x: auto;
+  padding: $spacing-2xs;
+
+  // Hide scroll bar in some browsers
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+// Adjust for the variant: Pill
+.tabs-list.pill {
+  gap: $spacing-xs;
+}
+
+// Adjust for the variant: Underline
+.tabs-list.underline {
+  gap: $spacing-xl;
+}
+
+@media (max-width: 768px) {
+  .tab-list.pill {
+    gap: $spacing-2xs;
+  }
+  .tab-list.underline {
+    gap: $spacing-l;
+  }
+}
